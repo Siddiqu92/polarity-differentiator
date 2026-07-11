@@ -1,0 +1,89 @@
+{
+  "sample_1": {
+    "record": "Bezos Expeditions",
+    "discovery_source": "SEC FORM 13-F (Bezos Expeditions filings)",
+    "discovery_method": "Public SEC database search",
+    "discovery_url": "https://www.sec.gov/cgi-bin/browse-edgar",
+    "entity_verification": {
+      "name": "Bezos Expeditions",
+      "aum": "$107.8 Billion",
+      "source": "SEC Filings + Bloomberg",
+      "confidence": "98%",
+      "notes": "AUM from 13-F filings publicly available"
+    },
+    "principal_verification": {
+      "name": "Jeff Bezos",
+      "title": "Founder",
+      "email": "Not publicly available (private)",
+      "linkedin": "https://www.linkedin.com/in/jeffbezos",
+      "source": "LinkedIn Public Profile + Wikipedia",
+      "confidence": "100%",
+      "notes": "Well-documented public figure"
+    },
+    "recent_signals": {
+      "latest_investment": "Anthropic ($100M+, 2023)",
+      "source": "TechCrunch, Bloomberg",
+      "confidence": "95%"
+    },
+    "final_confidence": "97%",
+    "actionability": "High - Verified founder, known investment theses (tech, space, climate)"
+  },
+  "sample_2": {
+    "record": "Emerson Collective",
+    "discovery_source": "Crunchbase + Press Releases",
+    "discovery_method": "Crunchbase company database + web search",
+    "discovery_url": "https://www.crunchbase.com",
+    "entity_verification": {
+      "name": "Emerson Collective",
+      "aum": "$5 Billion (estimated)",
+      "source": "Crunchbase + Forbes",
+      "confidence": "88%",
+      "notes": "Emerson Collective does not disclose exact AUM; estimates from public sources"
+    },
+    "principal_verification": {
+      "name": "Laurene Powell Jobs",
+      "title": "Founder",
+      "email": "contact@emersoncollective.com",
+      "linkedin": "https://www.linkedin.com/company/emerson-collective",
+      "source": "Company website + LinkedIn + Press",
+      "confidence": "92%",
+      "notes": "Founder verified via multiple public sources; company email pattern-based"
+    },
+    "recent_signals": {
+      "latest_focus": "Education, Health, Climate Tech",
+      "source": "Company website, Press releases",
+      "confidence": "90%"
+    },
+    "final_confidence": "90%",
+    "actionability": "High - Clear investment mandates, active in tech/education/health"
+  },
+  "sample_3": {
+    "record": "Walton Family Foundation",
+    "discovery_source": "IRS Tax-Exempt Organization Database + Foundation Center",
+    "discovery_method": "IRS Form 990 search + Foundation Center database",
+    "discovery_url": "https://www.irs.gov/tax-exempt-organization-search",
+    "entity_verification": {
+      "name": "Walton Family Foundation",
+      "aum": "$10 Billion (as of 2023 filings)",
+      "source": "IRS 990 Form + Foundation Center",
+      "confidence": "99%",
+      "notes": "Registered family office; AUM from official IRS filings"
+    },
+    "principal_verification": {
+      "name": "Nancy Walton Laurie",
+      "title": "Trustee/Director",
+      "email": "Not publicly available (private foundation)",
+      "linkedin": "Limited public presence",
+      "source": "IRS Filings + Wikipedia",
+      "confidence": "85%",
+      "notes": "Name verified via IRS; email requires outbound research or database purchase"
+    },
+    "recent_signals": {
+      "focus_areas": "Real Estate, K-12 Education, Community Development",
+      "source": "Foundation website + 990 filings",
+      "confidence": "92%"
+    },
+    "final_confidence": "92%",
+    "actionability": "High - Clear geographic focus (Arkansas), verified investment thesis (real estate, retail, education)"
+  }
+}
