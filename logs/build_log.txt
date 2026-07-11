@@ -1,0 +1,5 @@
+
+[DISCOVERY PHASE - 2026-07-12T00:23:43.183890]
+Total offices discovered: 48
+Offices saved to: output\family_offices_raw.csv
+Sample: Walton Family Foundation, Emerson Collective, Bezos Expeditions, Thomson Family Foundation, Slim Family Office, ... +43 more
