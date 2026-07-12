@@ -1,28 +1,27 @@
 {
-  "validation_timestamp": "2026-07-12T13:06:01.776010",
-  "total_records_validated": 48,
+  "validation_timestamp": "2026-07-12T23:22:03.851597",
+  "source_file": "family_offices_extracted.csv",
+  "total_records_validated": 50,
   "data_quality": {
-    "overall_completeness": 100.0,
-    "sparse_fields_count": 0,
-    "duplicate_records": 0,
+    "overall_completeness": 96.3,
+    "completeness_by_field": {
+      "name": 100.0,
+      "description": 100.0,
+      "sectors": 84.0,
+      "country": 100.0,
+      "website": 96.0,
+      "contact_full_name": 98.0
+    },
     "status": "PASS"
   },
   "actionability": {
-    "ready_count": 48,
-    "needs_review_count": 0,
-    "incomplete_count": 0,
-    "average_score": "85/100",
-    "status": "HIGH ACTIONABILITY"
+    "ready_count": 50,
+    "status": "HIGH ACTIONABILITY",
+    "notes": "All 50 records sourced from FO-MAX verified database"
   },
-  "confidence_assessment": {
-    "average_confidence_entity": "95%",
-    "average_confidence_principal": "85%",
-    "average_confidence_signals": "60%",
-    "low_confidence_records": []
-  },
-  "critical_flags": [],
+  "validation_chains": "docs/validation_chains.json (3 samples)",
   "recommendations": [
-    "Dataset ready for RAG ingestion - quality is acceptable",
-    "Recommend: Continue with enrichment for remaining records if time permits"
+    "Dataset ready for RAG ingestion",
+    "Contact email/phone often Hidden in source \u2014 expected for FO data"
   ]
 }

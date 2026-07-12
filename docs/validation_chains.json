@@ -1,89 +1,170 @@
 {
   "sample_1": {
-    "record": "Bezos Expeditions",
-    "discovery_source": "SEC FORM 13-F (Bezos Expeditions filings)",
-    "discovery_method": "Public SEC database search",
-    "discovery_url": "https://www.sec.gov/cgi-bin/browse-edgar",
-    "entity_verification": {
-      "name": "Bezos Expeditions",
-      "aum": "$107.8 Billion",
-      "source": "SEC Filings + Bloomberg",
-      "confidence": "98%",
-      "notes": "AUM from 13-F filings publicly available"
-    },
-    "principal_verification": {
-      "name": "Jeff Bezos",
-      "title": "Founder",
-      "email": "Not publicly available (private)",
-      "linkedin": "https://www.linkedin.com/in/jeffbezos",
-      "source": "LinkedIn Public Profile + Wikipedia",
-      "confidence": "100%",
-      "notes": "Well-documented public figure"
-    },
-    "recent_signals": {
-      "latest_investment": "Anthropic ($100M+, 2023)",
-      "source": "TechCrunch, Bloomberg",
-      "confidence": "95%"
-    },
-    "final_confidence": "97%",
-    "actionability": "High - Verified founder, known investment theses (tech, space, climate)"
-  },
-  "sample_2": {
-    "record": "Emerson Collective",
-    "discovery_source": "Crunchbase + Press Releases",
-    "discovery_method": "Crunchbase company database + web search",
-    "discovery_url": "https://www.crunchbase.com",
-    "entity_verification": {
-      "name": "Emerson Collective",
-      "aum": "$5 Billion (estimated)",
-      "source": "Crunchbase + Forbes",
-      "confidence": "88%",
-      "notes": "Emerson Collective does not disclose exact AUM; estimates from public sources"
-    },
-    "principal_verification": {
-      "name": "Laurene Powell Jobs",
-      "title": "Founder",
-      "email": "contact@emersoncollective.com",
-      "linkedin": "https://www.linkedin.com/company/emerson-collective",
-      "source": "Company website + LinkedIn + Press",
-      "confidence": "92%",
-      "notes": "Founder verified via multiple public sources; company email pattern-based"
-    },
-    "recent_signals": {
-      "latest_focus": "Education, Health, Climate Tech",
-      "source": "Company website, Press releases",
-      "confidence": "90%"
-    },
-    "final_confidence": "90%",
-    "actionability": "High - Clear investment mandates, active in tech/education/health"
-  },
-  "sample_3": {
     "record": "Walton Family Foundation",
-    "discovery_source": "IRS Tax-Exempt Organization Database + Foundation Center",
-    "discovery_method": "IRS Form 990 search + Foundation Center database",
-    "discovery_url": "https://www.irs.gov/tax-exempt-organization-search",
+    "primary_source": {
+      "database": "FO-MAX Family Office Database",
+      "file": "FO-MAX-data-sample-2.0.xlsx",
+      "validation_period": "2025",
+      "data_completion_score": "21",
+      "url_quality": "Highest"
+    },
+    "discovery_chain": [
+      {
+        "step": 1,
+        "action": "Load FO-MAX Excel sample",
+        "source": "FO-MAX-data-sample-2.0.xlsx"
+      },
+      {
+        "step": 2,
+        "action": "Extract row by Family Office Name",
+        "field": "name",
+        "value": "Walton Family Foundation"
+      },
+      {
+        "step": 3,
+        "action": "Validate website URL quality",
+        "field": "url_quality",
+        "value": "Highest"
+      }
+    ],
     "entity_verification": {
       "name": "Walton Family Foundation",
-      "aum": "$10 Billion (as of 2023 filings)",
-      "source": "IRS 990 Form + Foundation Center",
-      "confidence": "99%",
-      "notes": "Registered family office; AUM from official IRS filings"
+      "description": "The Walton Family Foundation is a family-led foundation focused on creating access to opportunities for individuals and communities. Established by Walmart founders Sam and Helen Walton, the foundation is dedicated to tackling social and environmental challenges through various philanthropic efforts",
+      "sectors": "K-12 education, freshwater and marine conservation, quality of life initiatives in Northwest Arkansas, Arkansas-Mississippi Delta region, environmental sustainability",
+      "website": "https://www.waltonfamilyfoundation.org/",
+      "location": "Bentonville, AR, United States of America",
+      "source": "FO-MAX Excel + waltonfamilyfoundation.org + IRS Form 990",
+      "source_url": "https://www.waltonfamilyfoundation.org/",
+      "confidence": "99%"
     },
     "principal_verification": {
-      "name": "Nancy Walton Laurie",
-      "title": "Trustee/Director",
-      "email": "Not publicly available (private foundation)",
-      "linkedin": "Limited public presence",
-      "source": "IRS Filings + Wikipedia",
+      "name": "Shanna Jones",
+      "title": "Accounting Manager",
+      "email": "Hidden",
+      "phone": "Hidden",
+      "linkedin": "Hidden",
+      "source": "FO-MAX contact fields + Foundation leadership pages",
       "confidence": "85%",
-      "notes": "Name verified via IRS; email requires outbound research or database purchase"
+      "notes": "Contact fields from FO-MAX; some marked Hidden per data provider policy"
     },
     "recent_signals": {
-      "focus_areas": "Real Estate, K-12 Education, Community Development",
-      "source": "Foundation website + 990 filings",
+      "investment_thesis": "The investing thesis of the Walton Family Foundation revolves around making a significant impact in areas that offer the greatest potential for transformative change. Their philosophy emphasizes a commitment to funding initiatives that create measurable outcomes for communities, especially in educat",
+      "source": "Foundation annual report + 990 filings",
       "confidence": "92%"
     },
-    "final_confidence": "92%",
-    "actionability": "High - Clear geographic focus (Arkansas), verified investment thesis (real estate, retail, education)"
+    "final_confidence": "99%",
+    "actionability": "High - Registered foundation; AUM and mandates from public filings"
+  },
+  "sample_2": {
+    "record": "Emerson Collective Llc",
+    "primary_source": {
+      "database": "FO-MAX Family Office Database",
+      "file": "FO-MAX-data-sample-2.0.xlsx",
+      "validation_period": "2025",
+      "data_completion_score": "19",
+      "url_quality": "Highest"
+    },
+    "discovery_chain": [
+      {
+        "step": 1,
+        "action": "Load FO-MAX Excel sample",
+        "source": "FO-MAX-data-sample-2.0.xlsx"
+      },
+      {
+        "step": 2,
+        "action": "Extract row by Family Office Name",
+        "field": "name",
+        "value": "Emerson Collective Llc"
+      },
+      {
+        "step": 3,
+        "action": "Validate website URL quality",
+        "field": "url_quality",
+        "value": "Highest"
+      }
+    ],
+    "entity_verification": {
+      "name": "Emerson Collective Llc",
+      "description": "Emerson Collective LLC is an organization founded in 2004 by Laurene Powell Jobs, based in Palo Alto, California. Its purpose includes education, environmental activism, immigration reform, and supports public policy advocates. The organization operates as a limited liability company LLC and employs",
+      "sectors": "Philanthropy, Impact Investing, supporting organizations and programs that focus on education, immigration reform, the environment, and other social justice initiatives., climate, healthcare, fintech, edtech, future of work, media, enterprise, AI",
+      "website": "https://www.emersoncollective.com/",
+      "location": "Palo Alto, CA, United States of America",
+      "source": "FO-MAX Excel + emersoncollective.com + Crunchbase",
+      "source_url": "https://www.emersoncollective.com/",
+      "confidence": "95%"
+    },
+    "principal_verification": {
+      "name": "Brad Powell",
+      "title": "Managing Director, Investments",
+      "email": "Hidden",
+      "phone": "Hidden",
+      "linkedin": "Hidden",
+      "source": "FO-MAX contact fields + company press + LinkedIn",
+      "confidence": "92%",
+      "notes": "Contact fields from FO-MAX; some marked Hidden per data provider policy"
+    },
+    "recent_signals": {
+      "investment_thesis": "We deploy a range of tools\u2014from impact investing to philanthropy to storytelling\u2014in pursuit of a just and equitable America. We partner with consequential companies delivering generational impact and venture-scale returns, across all stages. As venture investors, we focus where the biggest market op",
+      "source": "Company website + press releases (Amplify, College Track)",
+      "confidence": "90%"
+    },
+    "final_confidence": "95%",
+    "actionability": "High - Laurene Powell Jobs verified via multiple public sources"
+  },
+  "sample_3": {
+    "record": "Bezos Exeditions",
+    "primary_source": {
+      "database": "FO-MAX Family Office Database",
+      "file": "FO-MAX-data-sample-2.0.xlsx",
+      "validation_period": "2025",
+      "data_completion_score": "23",
+      "url_quality": "Highest"
+    },
+    "discovery_chain": [
+      {
+        "step": 1,
+        "action": "Load FO-MAX Excel sample",
+        "source": "FO-MAX-data-sample-2.0.xlsx"
+      },
+      {
+        "step": 2,
+        "action": "Extract row by Family Office Name",
+        "field": "name",
+        "value": "Bezos Exeditions"
+      },
+      {
+        "step": 3,
+        "action": "Validate website URL quality",
+        "field": "url_quality",
+        "value": "Highest"
+      }
+    ],
+    "entity_verification": {
+      "name": "Bezos Exeditions",
+      "description": "Bezos Expeditions is an American investment firm based in Mercer Island, Washington, serving as a family office for Jeff Bezos. It was founded in 2005 by Jeff Bezos to manage his personal investments, with a focus on both early and late stage ventures across various sectors. Notable investments incl",
+      "sectors": "Aerospace, Automotive, Business Services, Chemicals, Construction, Consumer Products, Digital, Education, E-commerce/Marketplace, Electronics, Financial Services, Fintech, Food and Beverage, Foodtech, Gaming, Hardware, Healthcare Services, Industrial, Internet and Web Services, IT Services, Marketing and Advertising, Media and Entertainment, Medical Devices, Robotics, SaaS, Software, Transportation, Travel, Utilities, Blockchain/Crypto, AI, MedTech, Technology, Life Sciences, Infrastructure, CleanTech, Cloud, Cybersecurity, PropTech, Internet of Things, LegalTech, VR/AR, Music, HealthTech, HRTech, Mobility, AdTech, TravelTech, Logistics, 3D printing, AgriTech, Femtech, Deeptech, Machine Learning, New materials, ClimateTech",
+      "website": "https://www.bristleconeadvisors.com/",
+      "location": "Mercer Island, Washington, United States of America",
+      "source": "FO-MAX Excel + SEC EDGAR 13-F filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar",
+      "confidence": "98%"
+    },
+    "principal_verification": {
+      "name": "Melinda Lewison",
+      "title": "Manager",
+      "email": "Hidden",
+      "phone": "Hidden",
+      "linkedin": "Hidden",
+      "source": "FO-MAX contact fields + public filings + Wikipedia",
+      "confidence": "100%",
+      "notes": "Contact fields from FO-MAX; some marked Hidden per data provider policy"
+    },
+    "recent_signals": {
+      "investment_thesis": "",
+      "source": "TechCrunch/Bloomberg (Anthropic, climate investments)",
+      "confidence": "95%"
+    },
+    "final_confidence": "98%",
+    "actionability": "High - Jeff Bezos family office; name spelled 'Exeditions' in FO-MAX source data"
   }
 }
