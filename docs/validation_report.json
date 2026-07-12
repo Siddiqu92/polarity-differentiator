@@ -1,0 +1,28 @@
+{
+  "validation_timestamp": "2026-07-12T13:06:01.776010",
+  "total_records_validated": 48,
+  "data_quality": {
+    "overall_completeness": 100.0,
+    "sparse_fields_count": 0,
+    "duplicate_records": 0,
+    "status": "PASS"
+  },
+  "actionability": {
+    "ready_count": 48,
+    "needs_review_count": 0,
+    "incomplete_count": 0,
+    "average_score": "85/100",
+    "status": "HIGH ACTIONABILITY"
+  },
+  "confidence_assessment": {
+    "average_confidence_entity": "95%",
+    "average_confidence_principal": "85%",
+    "average_confidence_signals": "60%",
+    "low_confidence_records": []
+  },
+  "critical_flags": [],
+  "recommendations": [
+    "Dataset ready for RAG ingestion - quality is acceptable",
+    "Recommend: Continue with enrichment for remaining records if time permits"
+  ]
+}
