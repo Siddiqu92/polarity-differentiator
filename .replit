@@ -1,0 +1,14 @@
+﻿run = "python rag_app/main.py"
+modules = ["python-3.10"]
+
+[nix]
+channel = "stable-22_11"
+
+[packager]
+language = "python310"
+
+[packager.features]
+packageSearcher = true
+
+[env]
+PYTHONUNBUFFERED = "1"
