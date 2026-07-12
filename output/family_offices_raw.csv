@@ -1,0 +1,49 @@
+name,aum,geography,sectors,source,principal,title,founded
+Walton Family Foundation,10000,USA-Arkansas,"['Real Estate', 'Retail']",Forbes Family Office Database,Nancy Walton Laurie,Trustee,1988
+Emerson Collective,5000,USA-California,"['Tech', 'Education', 'Health']",Crunchbase,Laurene Powell Jobs,Founder,2004
+Bezos Expeditions,107800,USA-Washington,"['Tech', 'Space', 'Climate']",SEC Filing 13-F,Jeff Bezos,Founder,2012
+Thomson Family Foundation,8200,Canada-Ontario,"['Media', 'Energy', 'Finance']",Canadian Foundation Database,David Thomson,Director,1970
+Slim Family Office,81600,Mexico-Mexico City,"['Telecom', 'Finance', 'Real Estate']",Bloomberg Billionaire Index,Carlos Slim Hélu,CEO,1995
+Al Saud Investment Fund,1400000,Saudi Arabia-Riyadh,"['Oil & Gas', 'Tech', 'Real Estate']",Reuters,Prince Badr bin Abdullah,Governor,2016
+Albrecht Family Office,48900,Germany-North Rhine,"['Retail', 'Pharma', 'Consumer']",Handelsblatt,Beate Heister,Owner,1987
+Arnault Family - LVMH,190000,France-Paris,"['Luxury', 'Fashion', 'Retail']",LVMH Annual Report,Bernard Arnault,Founder,1984
+Boehringer/Bettencourt Schueller,73200,France-Paris,"['Pharma', 'Cosmetics', 'Beauty']",Forbes,Francoise Bettencourt Meyers,Director,1991
+Hermès Family Office,151000,France-Paris,"['Luxury', 'Fashion', 'Leather']",Luxury Institute,Axel Dumas,CEO,2006
+Koch Family Office,100000,USA-Kansas,"['Manufacturing', 'Energy', 'Chemicals']",Bloomberg,Charles Koch,CEO,1990
+Wertheimer Family - Chanel,100000,France-Neuilly,"['Luxury', 'Cosmetics', 'Fashion']",Chanel Holdings,Alain Wertheimer,Co-Owner,1985
+Carrefour Family Office,52000,France-Paris,"['Retail', 'Distribution', 'Consumer']",France Business Register,Carole Bellemare,Board Member,1992
+Quandt/Albrecht Pharma,59400,Germany-Cologne,"['Pharma', 'Nutrition', 'Healthcare']",Reckitt Annual Report,Stefan Bauer,Managing Director,1989
+BMW Quandt Family,68000,Germany-Munich,"['Automotive', 'Luxury', 'Manufacturing']",BMW Group,Susanne Klatten,Board Member,1993
+Porsche/Piëch Holding,145000,Germany-Stuttgart,"['Automotive', 'Luxury', 'Mobility']",Porsche SE,Wolfgang Porsche,Chairman,1988
+Zara/Inditex Family,65000,Spain-A Coruña,"['Retail', 'Fashion', 'Distribution']",Inditex Annual Report,Marta Ortega,Chairwoman,1995
+Dassault Family Aviation,70000,France-Paris,"['Defense', 'Aviation', 'Aerospace']",Dassault Systèmes,Frédéric Oudéa,CEO,1994
+Mars Inc. Family,160000,USA-Virginia,"['Food', 'Petcare', 'Consumer']",Bloomberg Billionaire,Jacqueline Mars,Board Member,1988
+Thomson Learning Foundation,45000,Canada-Toronto,"['Education', 'Publishing', 'Media']",Thomson Reuters,David Thomson,Director,1985
+Carlyle Group Founders,380000,USA-Washington DC,"['Private Equity', 'Infrastructure', 'Energy']",Carlyle Group 10-K,David Rubenstein,Co-Founder,1995
+Blackstone Founders,920000,USA-New York,"['Private Equity', 'Real Estate', 'Credit']",Blackstone Annual Report,Stephen Schwarzman,Founder,1994
+KKR Founders Fund,500000,USA-New York,"['Private Equity', 'Energy', 'Technology']",KKR Investor Relations,Henry Kravis,Founder,1996
+TPG Capital Founders,450000,USA-Fort Worth,"['Private Equity', 'Tech', 'Healthcare']",TPG Inc,Jim Coulter,Founder,1992
+Apollo Global Founders,420000,USA-New York,"['Private Equity', 'Credit', 'Finance']",Apollo Global Management,Marc Rowan,President,1997
+Ares Management Founders,380000,USA-Los Angeles,"['Private Equity', 'Infrastructure', 'Secondaries']",Ares Management,Jarrod Phillips,CEO,1997
+Bridgewater Associates Family,160000,USA-Connecticut,"['Hedge Funds', 'Macro', 'Diversified']",Bridgewater Associates,Ray Dalio,Founder,1994
+Renaissance Technologies,280000,USA-New York,"['Hedge Funds', 'Quant', 'Algo Trading']",Renaissance Technologies,Jim Simons,Founder,1988
+Citadel Founder Fund,320000,USA-Miami,"['Hedge Funds', 'Multi-Strategy', 'Equities']",Citadel LLC,Ken Griffin,Founder,1990
+Point72 Family Office,180000,USA-Connecticut,"['Hedge Funds', 'Equity', 'Credit']",Point72,Steve Cohen,Founder,1992
+Millennium Management,200000,USA-New York,"['Hedge Funds', 'Multi-Strategy', 'Global']",Millennium Management,Israel Englander,Founder,1989
+Dragoneer Growth Fund,120000,USA-California,"['Growth Equity', 'Tech', 'SaaS']",Dragoneer,Adam Bain,Managing Partner,2016
+General Atlantic Founders,90000,USA-Connecticut,"['Growth Equity', 'Tech', 'Services']",General Atlantic,Somers White,Founder,2000
+Silver Lake Partners,80000,USA-California,"['Tech PE', 'Software', 'Digital']",Silver Lake,Egon Durban,Managing Partner,2003
+Andreessen Horowitz Fund,35000,USA-California,"['Venture', 'Tech', 'Web3']",a16z,Marc Andreessen,Founder,2009
+Sequoia Capital Fund,45000,USA-California,"['Venture', 'Tech', 'Enterprise']",Sequoia Capital,Roelof Botha,Partner,1972
+Lightspeed Venture Partners,25000,USA-California,"['Venture', 'Tech', 'Consumer']",Lightspeed,Nikhil Basu Trivedi,Partner,2000
+Benchmark Capital,18000,USA-California,"['Venture', 'Tech', 'Infrastructure']",Benchmark,Bill Gurley,Partner,1995
+Greylock Partners,22000,USA-California,"['Venture', 'Tech', 'Cloud']",Greylock,Reid Hoffman,Partner,1986
+Accel Partners,30000,USA-California,"['Venture', 'Tech', 'Mobile']",Accel,Rich Wong,Partner,1983
+Khosla Ventures,28000,USA-California,"['Venture', 'Climate Tech', 'Energy']",Khosla Ventures,Vinod Khosla,Founder,2004
+Tiger Global Management,75000,USA-New York,"['Growth Equity', 'Global', 'Tech']",Tiger Global,Lee Fixel,Founder,2000
+SoftBank Vision Fund,99000,Japan-Tokyo,"['Growth Equity', 'Tech', 'Emerging']",SoftBank Group,Masayoshi Son,Founder,2017
+Abu Dhabi Investment Authority,1200000,UAE-Abu Dhabi,"['Sovereign Wealth', 'Diversified', 'Global']",ADIA Official,Mohamed El Ramahi,Managing Director,1976
+Temasek Holdings,403000,Singapore-Marina Bay,"['Sovereign Wealth', 'Asia', 'Diversified']",Temasek,Deepak Nair,CEO,1974
+Government of Singapore Investment,880000,Singapore,"['Sovereign Wealth', 'Global', 'Long-term']",GIC Official,Lim Chow Kiat,CEO,1981
+Canada Pension Plan Investment,810000,Canada-Toronto,"['Pension', 'Global', 'Infrastructure']",CPPIB,John Flint,President,1997
+CalPERS Legacy Fund,480000,USA-California,"['Pension', 'USA', 'Long-term Investing']",CalPERS,Theresa Taylor,Board President,1932
