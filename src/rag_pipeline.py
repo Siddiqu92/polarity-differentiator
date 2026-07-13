@@ -34,7 +34,7 @@ Phone: {record.get('contact_phone','')}
 
         return chunks
 
-    def ingest_dataset(self, csv_file="output/family_offices_extracted.csv"):
+    def ingest_dataset(self, csv_file="output/family_offices_enriched_verified.csv"):
         df = pd.read_csv(csv_file)
         df = df.fillna("")
 
