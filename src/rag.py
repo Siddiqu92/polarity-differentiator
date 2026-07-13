@@ -5,7 +5,7 @@ from pathlib import Path
 
 import chromadb
 
-from src.paths import EXTRACTED_CSV, CHROMA_DIR
+from src.paths import get_default_csv, CHROMA_DIR
 
 COLLECTION_NAME = "family_offices"
 
@@ -24,7 +24,7 @@ class FamilyOfficeRAG:
 
     def load_data(self, csv_path=None):
         """Load family office records from extracted CSV."""
-        csv_path = Path(csv_path or EXTRACTED_CSV)
+        csv_path = Path(csv_path or get_default_csv())
         if not csv_path.exists():
             raise FileNotFoundError(
                 f"CSV not found: {csv_path}. Run: python -m src.data_extraction"
@@ -81,6 +81,25 @@ class FamilyOfficeRAG:
                 ),
                 "metadata": {"name": name, "chunk_type": "full"},
             })
+            if record.get("confidence_score"):
+                chunks.append({
+                    "id": _safe_id(name, "verification", idx),
+                    "text": (
+                        f"Family Office: {name}\n"
+                        f"Data Sources: {record.get('data_sources', '')}\n"
+                        f"Verification Method: {record.get('verification_method', '')}\n"
+                        f"Confidence Score: {record.get('confidence_score', '')}\n"
+                        f"Verification Date: {record.get('verification_date', '')}\n"
+                        f"Gaps Noted: {record.get('gaps_noted', '')}\n"
+                        f"Recent Signals: {record.get('recent_signals_flag', '')}\n"
+                        f"Recent Activity: {record.get('recent_activity_signals', '')}"
+                    ),
+                    "metadata": {
+                        "name": name,
+                        "chunk_type": "verification",
+                        "confidence_score": record.get("confidence_score", ""),
+                    },
+                })
         print(f"[OK] Created {len(chunks)} chunks from {len(records)} records")
         return chunks
 

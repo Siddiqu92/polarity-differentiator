@@ -29,10 +29,13 @@ pip install -r requirements.txt
 # 2. Extract 50 family offices from Excel
 python -m src.data_extraction
 
-# 3. Build validation chains + quality report
+# 3. Add verification metadata + recent signals
+python -m src.enrich_verification_metadata
+
+# 4. Build validation chains + quality report
 python -m src.build_validation_chains
 
-# 4. Ingest into ChromaDB and test RAG
+# 5. Ingest into ChromaDB and test RAG
 python -m src.rag
 
 # 5. Start API (port 8000)
@@ -45,9 +48,13 @@ streamlit run rag_app/streamlit_app.py
 ### Deliverables
 
 - `output/family_offices_extracted.csv` — 50 real records
+- `output/family_offices_enriched_verified.csv` — 50 records + verification metadata + recent signals
+- `docs/METHODOLOGY_SUMMARY.md` — Discovery, enrichment, verification methodology
+- `docs/THREE_RECORDS_VALIDATION_CHAIN.md` — Deep-dive validation (Cascade, Paz, Bezos)
+- `docs/STACK_DOCUMENTATION.md` — Full technical architecture
 - `docs/validation_chains.json` — 3 full validation chains with sources
 - `docs/validation_report.json` — data quality report
-- `chromadb_data/` — persisted vector index (150 chunks)
+- `chromadb_data/` — persisted vector index (200 chunks)
 
 ## Task 2: SaaS Conversion Analysis
 

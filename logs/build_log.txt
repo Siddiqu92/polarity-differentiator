@@ -39,3 +39,21 @@ Source: FO-MAX-data-sample-2.0.xlsx
 Records extracted: 50
 Output file: output\family_offices_extracted.csv
 Data quality: REAL family office records from verified database
+
+[DATA EXTRACTION - 2026-07-12T23:02:13.894394]
+Source: FO-MAX-data-sample-2.0.xlsx
+Records extracted: 50
+Output file: output\family_offices_extracted.csv
+Data quality: REAL family office records from verified database
+
+[DATA EXTRACTION - 2026-07-12T23:17:37.478489]
+Source: FO-MAX-data-sample-2.0.xlsx
+Records extracted: 50
+Output file: C:\Users\Siddique khan\OneDrive\Desktop\polarity-differentiator\output\family_offices_extracted.csv
+Data quality: REAL family office records from FO-MAX verified database
+
+[DATA EXTRACTION - 2026-07-12T23:21:26.751410]
+Source: FO-MAX-data-sample-2.0.xlsx
+Records extracted: 50
+Output file: C:\Users\Siddique khan\OneDrive\Desktop\polarity-differentiator\output\family_offices_extracted.csv
+Data quality: REAL family office records from FO-MAX verified database
