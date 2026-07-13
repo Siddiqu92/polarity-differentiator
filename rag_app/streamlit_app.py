@@ -18,8 +18,6 @@ if "rag" not in st.session_state:
         records = rag.load_data()
         rag.ingest_data(records)
         st.session_state.rag = rag
-        all_offices_list = rag.get_all_offices()
-        st.session_state.office_names = sorted(all_offices_list)
 
 rag = st.session_state.rag
 office_count = len(rag.get_all_offices())
@@ -39,38 +37,23 @@ with col3:
 
 st.divider()
 
-st.markdown("### 🔍 Search Options")
-
-selected_office = st.selectbox(
-    "Option 1: Select an office",
-    options=[""] + st.session_state.office_names,
-    index=0,
-    label_visibility="collapsed",
-)
-
-st.markdown("---")
+st.markdown("### 🔍 Search Family Offices:")
 
 search_query = st.text_input(
-    "Option 2: Search by keyword",
-    placeholder="e.g., 'Tech investments', 'California', 'Early-stage'",
+    "Enter your search query",
+    placeholder="e.g., 'Tech investments California', 'Real estate', 'Hedge funds'",
     label_visibility="collapsed",
 )
 
-top_k = st.slider("Number of results", 1, 50, 10)
+top_k = st.slider("Number of results", 1, 50, 5)
 
 st.divider()
 
-query_to_use = None
-if selected_office:
-    query_to_use = selected_office
-elif search_query:
-    query_to_use = search_query
-
-if query_to_use:
-    st.markdown(f"### Results for: **{query_to_use}**")
+if search_query:
+    st.markdown(f"### Results for: **{search_query}**")
     
     with st.spinner("Searching..."):
-        results = rag.search(query_to_use, top_k=top_k)
+        results = rag.search(search_query, top_k=top_k)
     
     if results:
         st.success(f"Found {len(results)} result(s)")
@@ -80,14 +63,14 @@ if query_to_use:
             st.write(result["text"])
             
             if result.get("metadata"):
-                with st.expander("Details"):
+                with st.expander("📋 Details"):
                     st.json(result["metadata"])
             
             st.divider()
     else:
-        st.warning("No results found.")
+        st.warning("No results found. Try a different query.")
 else:
-    st.info("Select an office or enter a search term to begin.")
+    st.info("📝 Enter a search query to begin searching family offices.")
 
 st.markdown("---")
 st.caption(f"✅ {office_count} offices | {chunk_count} chunks | Streamlit + ChromaDB")
